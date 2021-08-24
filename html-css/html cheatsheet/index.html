@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>HTML Cheat Sheet</title>
+  </head>
+  <body>
+    <a href="blog.html">goto blog</a>
+    <!-- this is where our headings are goint to go -->
+    <h1>Heading One</h1>
+    <h2>this is heading two</h2>
+    <h3>Heading three</h3>
+    <h4>Heading four</h4>
+    <h5>Heading five</h5>
+    <h6>Heading six</h6>
+
+    <!-- Paragraph -->
+    <p>Lorem ipsum dolor sit amet, <strong>consectetur</strong> adipiscing elit. Donec vel elit non tellus rhoncus porta. Aliquam non dolor magna. Donec vel mauris nec orci porta fermentum. Aenean molestie, sapien sit amet scelerisque varius, libero massa dictum lacus, quis mollis nulla urna quis ipsum. Cras condimentum ornare feugiat. Nunc ornare consequat turpis<em> id consectetur. Suspendisse</em> eleifend orci id urna aliquam, id rhoncus turpis convallis. </p>
+    <!-- target=_"_blank" opens the page on a new tab usually use if it is an external site -->
+    <p>Lorem ipsum dolor sit amet, consectetur <a href="http://google.com" target="_blank"> adipiscing elit. Donec</a> vel elit non tellus rhoncus porta. Aliquam non dolor magna. Donec vel mauris nec orci porta fermentum. Aenean molestie, sapien sit amet scelerisque varius, libero massa dictum lacus, quis mollis nulla urna quis ipsum. Cras condimentum ornare feugiat. Nunc ornare consequat turpis id consectetur. Suspendisse eleifend orci id urna aliquam, id rhoncus turpis convallis. </p>
+    <!-- key value pars the title= and href= type thing -->
+    <ul>
+      <li>List item 1</li>
+      <li>List item 1</li>
+      <li>List item 1</li>
+      <li>List item 1</li>
+    </ul>
+    
+    <ol>
+      <li>List item 1</li>
+      <li>List item 1</li>
+      <li>List item 1</li>
+      <li>List item 1</li>
+    </ol>
+    <!-- tables -->
+    <table>
+      <thead>
+	<tr>
+	  <th>Name</th>
+	  <th>Email</th>
+	  <th>age</th>
+	</tr>
+      </thead>
+      <tbody>
+	<tr>
+	  <td>Brad</td>
+	  <td>ss@ffj.com</td>
+	  <td>25</td>
+	</tr>
+	<tr>
+	  <td>sarg</td>
+	  <td>ss@ffj.com</td>
+	  <td>25</td>
+	</tr>
+	<tr>
+	  <td>Henry</td>
+	  <td>kaver@ffj.com</td>
+	  <td>19</td>
+	</tr>
+      </tbody>
+    </table>
+    <br>
+    <hr>
+    <br>
+
+    <!-- forms -->
+    <form action="process.php" method="POST">
+      <div>
+	<lable>First Name</lable>
+	<input type="text" name="firstName" placeholder="Enter first name">
+      </div>
+      <br>
+      <div>
+	<lable>Last Name</lable>
+	<input type="text" name="lastName">
+      </div>
+      <br>
+      <div>
+	<lable>Email</lable>
+	<input type="email" name="email">
+      </div>
+      <br>
+      <div>
+	<lable>message</lable>
+	<textarea name ="message"></textarea>
+      </div>
+      <br>
+      	<lable>Gender</lable>
+	<select name="gender">
+	  <option value="male">male</option>
+	  <option value="female">female</option>
+	</select>
+      </div>
+      <div>
+	<lable>age</lable>
+	<input type="number" name="age" value="30">
+      </div>
+      <br>
+      <div>
+	<lable>Birthday</lable>
+	<input type="date" name="birthday">
+      </div>
+      <br>
+      <input type="submit" name="submit" value="submit">
+      <br>
+    </form>
+    <hr>
+    <button click="someFunction">Click me!</button>
+
+    <!-- images -->
+    <a href="images/sample.jpeg">
+    <img src="images/sample.jpeg" alt="My Sample Image">
+    </a>
+
+    <!-- Quotations -->
+    <blockquote cite="http://google.com">
+      text
+    </blockquote>
+    
+    <div style="margin-top:500px"></div>
+    
+  </body>
+</html>

@@ -1,0 +1,103 @@
+* [[https://www.youtube.com/watch?v=TlB_eWDSMt4&t=56s][node tutorial]]
+
+** check version
+#+BEGIN_SRC sh
+node --version
+#+END_SRC
+
+#+RESULTS:
+: v10.19.0
+
+** build node application
+#+BEGIN_SRC sh
+mkdir first-app
+cd first-app
+touch app.js
+#+END_SRC
+
+#+RESULTS:
+
+** create function
+#+BEGIN_SRC js :tangle first-app/app.js
+  function sayHello(name) {
+      console.log('Hello ' + name)
+  }
+
+  sayHello("matt")
+#+END_SRC
+
+#+RESULTS:
+: Hellomatt
+: undefined
+
+You can now exicute that code with node.
+#+BEGIN_SRC sh
+node ./first-app/app.js
+#+END_SRC
+
+#+RESULTS:
+: Hello matt
+
+** node module system
+#+begin_src js :tangle first-app/app.js
+  var message = 'this is my message';
+  global.console.log(message)
+#+end_src
+
+#+RESULTS:
+: this is my message
+: undefined
+
+in node variables are added to the local file and not to the global
+things need to be modular
+#+begin_src js :tangle first-app/app.js
+console.log(module)
+#+end_src
+
+#+RESULTS:
+#+begin_example
+Module {
+  id: '.',
+  exports: {},
+  parent: null,
+  filename: '/tmp/babel-DYgk2m/js-script-5IRvxW',
+  loaded: false,
+  children: [],
+  paths:
+   [ '/tmp/babel-DYgk2m/node_modules',
+     '/tmp/node_modules',
+     '/node_modules' ] }
+undefined
+#+end_example
+
+** logger.js
+
+#+begin_src js :tangle first-app/logger.js
+  var url = 'http://mylogger.io/log';
+  function log(message) {
+      //send an http request
+      console.log(message);
+  }
+
+  module.exports = log;
+
+#+end_src
+
+#+RESULTS:
+: undefined
+
+
+#+begin_src js :tangle ./first-app/app.js
+  var log = require("./logger.js")
+
+  log("message");
+
+#+end_src
+
+
+#+begin_src sh :dir first-app
+node app.js
+#+end_src
+
+#+RESULTS:
+: message

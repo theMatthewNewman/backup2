@@ -1,0 +1,59 @@
+.cube{
+    position: fixed;
+    padding: 7rem;
+    display: grid;
+    transform-style: preserve-3d;
+    transform: rotateX(-45deg) rotateY(-45deg);
+    transition: 1s;
+
+}
+
+.cube:hover{
+    transform: rotateX(90deg) rotateY(90deg);
+    
+}
+
+.cube div{
+    grid-area: 1/1;
+    width: 20rem;
+    height: 20rem;
+    border: 2px solid black;
+}
+
+.s1{
+    background-color: red;
+    transform: rotateY(90deg) translateZ(10rem);
+}
+
+.s2{
+    background-color: blue;
+    transform: rotateY(-90deg) translateZ(10rem);
+    
+}
+
+.s3 {
+    background-color: green;
+    transform: rotateX(90deg) translateZ(10rem);
+    
+}
+
+.s4 {
+    background-color: pink;
+    transform: rotateX(-90deg) translateZ(10rem);
+    
+}
+
+.s5 {
+    background-color: white;
+    transform: rotateY(180deg) translateZ(10rem);
+    
+}
+
+
+.s6 {
+    background-color: black;
+    transform: translateZ(10rem);
+    
+}
+
+

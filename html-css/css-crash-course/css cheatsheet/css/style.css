@@ -1,0 +1,189 @@
+/*
+*{
+    margin:0;
+    padding:0;
+}
+*/
+body{
+    background-color:#f4f4f4;
+    color:#555555;
+    font-family: Arial, Helvetica, sans-sarif;
+    font-size:20px;
+    font-weight:normal;
+    /* same as above
+    font: normal 20px Arial, Halvetica, sans-sarif;
+   */
+    line-height:1.6em; /* em is responsive for line heights */
+    margin:0;
+}
+
+.clr{
+    clear:both;
+}
+
+.button{
+    background-color:#333;
+    color:#fff;
+    padding:10px 15px;
+    border:none;
+}
+
+.button:hover{
+    background-color:red;
+    color:white;
+}
+
+a {
+    text-decoration:none;
+    color:#000;
+}
+
+
+a:hover {
+    color:red;
+}
+
+a:active {
+    color:green;
+}
+
+
+.container{
+    width:80%;
+    margin:auto;
+}
+
+.box-1{
+    background-color:#333;
+    color:#fff;
+
+    border-bottom-width:10px;
+    border-top-style:dotted;
+    border:3px red solid;
+    padding:20px;
+    margin:20px 0;
+}
+
+.box-1 h1{
+    font-family:Tahoma;
+    font-weight:800;
+    font-style:italic;
+    font-decoration:underline;
+    text-align:center;
+}
+
+.box-2{
+    border:3px dotted #ccc;
+    padding:20px;
+    margin:20px 0;
+}
+
+.catagories{
+    border:1px #ccc solid;
+    padding:10px;
+    border-radius:15px;
+}
+
+.catagories h2{
+    text-align:center;
+}
+
+.catagories ul{
+    padding:0;
+    padding-left:20px;
+    list-style:square;
+    list-style:none;
+}
+
+.catagories li{
+    padding-bottom:6px;
+    border-bottom:dotted 1px #333;
+    List-style-image: url('../images/check.png')
+}
+
+
+
+.my-form{
+    padding:20px;
+}
+
+.my-form .form-group{
+    padding-bottom:15px;
+}
+
+.my-form label{
+    display:block;
+}
+
+.my-form input[type="text"], .my-form textarea{
+    padding:8px;
+    width:100%;
+}
+
+.block{
+    float:left;
+    width:33.3%;
+    border:3px solid #ccc;
+    padding:10px;
+    box-sizing:border-box;
+}
+
+#main-block{
+    float:left;
+    width:70%;
+    padding:15px;
+    box-sizing:border-box;
+}
+
+#sidebar{
+    float:right;
+    width:30%;
+    background:#333;
+    color:#fff;
+    padding:15px;
+    box-sizing:border-box;
+}
+
+.p-box{
+    width:800px;
+    height:500px;
+    border:1px solid black;
+    margin-top:30px;
+    position:relative;
+    background-image:url('../images/bg_image.jpeg');
+    background-repeat:no-repeat;
+    background-position:center center;
+}
+
+.p-box h1{
+    position:absolute;
+    top:40px;
+    left:200px;
+}
+
+.p-box h2{
+    position:absolute;
+    top:200px;
+    left:400px;
+}
+
+.fix-me{
+    position:fixed;
+    top:400px;
+}
+
+.my-list li:first-child{
+    background:red;
+}
+
+.my-list li:last-child{
+    background-color:blue;
+}
+
+.my-list li:nth-child(5){
+    background:yellow;
+}
+
+.my-list li:nth-child(even){
+    background:gray;
+}

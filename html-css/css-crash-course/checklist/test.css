@@ -1,0 +1,83 @@
+
+.s1{
+    border: 1px solid black;
+    grid-area: 1/1;
+    width: 20rem;
+    height: 20rem;
+    background-color: red;
+    transform: rotateY(90deg) translateZ(10rem);
+
+}
+.s2{
+    border: 1px solid black;
+    grid-area: 1/1;
+    width: 20rem;
+    height: 20rem;
+    background-color: blue;
+    transform: rotateX(90deg) translateZ(10rem);
+}
+
+.s3 {
+    border: 1px solid black;
+    grid-area: 1/1;
+    width: 20rem;
+    height: 20rem;
+    background-color: green;
+    transform: translateZ(10rem);
+}
+
+
+.s4 {
+    border: 1px solid black;
+    grid-area: 1/1;
+    width: 20rem;
+    height: 20rem;
+    background-color: pink;
+    transform: rotateX(-90deg) translateZ(10rem);
+}
+
+
+.s5 {
+    border: 1px solid black;
+    width: 20rem;
+    height: 20rem;
+    background-color: black;
+    transform: rotateY(-90deg) translateZ(10rem);
+    grid-area: 1/1;
+    
+}
+
+
+.s6 {
+    border: 1px solid black;
+    width: 20rem;
+    height: 20rem;
+    background-color: white;
+    transform: rotateX(180deg) translateZ(10rem);
+    grid-area: 1/1;
+    
+}
+
+
+.cube{
+    padding: 7rem;
+    position: fixed;
+    display: grid;
+    transform-style: preserve-3d;
+    transform: rotateX(-30deg) rotateY(-45deg);
+    transition: 1s;
+    margin-left: 15rem;
+    
+
+
+}
+
+
+.cube:hover {
+    transform: rotateY(90deg) rotateX(90deg);
+}
+
+h1{
+    margin-left: 15rem;
+    
+}

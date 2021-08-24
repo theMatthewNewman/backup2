@@ -1,0 +1,70 @@
+* Emacs lisp fundementals
+
+** lisp syntax
+primaraly composed of lists, symbols and values
+*** functions
+#+BEGIN_SRC emacs-lisp :tangle test.el
+  (defun the-meaning-of-life (answer)
+    (message "The answer is %s" answer))
+  (the-meaning-of-life "never stop")
+#+END_SRC
+
+#+RESULTS:
+: The answer is never stop
+*** data 
+*** types
+strings
+numbers
+symbols
+cons cells
+arrays and vectors
+... more
+**** emacs types
+buffers
+windows frames
+threads
+keymaps
+... more
+**** how evaluation works
+#+BEGIN_SRC emacs-lisp
+;; primitives are self evaluating
+;; if you C-x C-e you will get these evaluated exactly how they are
+35
+"Hello"
+[1 2 (+ 1 2)]
+
+;; not self evaluating
+buffer-file-name
+
+;; function first symbol points to a function
+(+ 300 11)
+(- 300 100)
+(other-buffer)
+
+
+#+END_SRC
+**** symbols
+basic functions that are not self evaluating
++ - = * / _ ~ % @ $ ^ & < > { } ?
+**** prefix notation
+#+BEGIN_SRC emacs-lisp
+(+ 300 (- 12 1))
+#+END_SRC
+
+#+RESULTS:
+: 311
+
+** tests
+#+BEGIN_SRC emacs-lisp :tangle test.el
+  ;; get previous buffer and switch to it
+  (switch-to-buffer (other-buffer))
+#+END_SRC
+
+#+RESULTS:
+: #<buffer test.el>
+#+BEGIN_SRC emacs-lisp :tangle test.el
+  (concat "Hello " "Emacs!")
+#+END_SRC
+
+#+RESULTS:
+: Hello Emacs!

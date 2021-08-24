@@ -1,0 +1,14 @@
+h1 {
+    color: gray;
+}
+
+.container{
+    display:flex;
+}
+
+
+.image {
+    border: 3px black solid;
+    height: 300px;
+    margin: 3px;
+}
